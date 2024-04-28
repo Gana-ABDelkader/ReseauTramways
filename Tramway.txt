@@ -1,0 +1,4 @@
+3
+V= 60 arret= 1 distance= 70  aller= 0 tempJusquaArret= 0 tempArr= 0 idx= 0
+V= 45 arret= 1 distance= 50 aller= 1 tempJusquaArret= 0 tempArr= 0 idx= 1
+V= 50 arret= 1 distance= 100 aller= 1 tempJusquaArret= 0 tempArr= 0 idx= 2
