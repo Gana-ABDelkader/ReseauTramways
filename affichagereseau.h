@@ -16,30 +16,30 @@ class AffichageReseau : public QWidget
     friend int main(int argc, char *argv[]);
 public:
     const int SLEEP=1000;
-    AffichageReseau(int temps,QWidget *parent = nullptr); //Gana
+    AffichageReseau(int temps,QWidget *parent = nullptr); 
     ~AffichageReseau();
 public slots:
-    void bouclePrincpale(); //Ensemble
+    void bouclePrincpale(); 
 private:
     Ligne d_ligne;
     QTimer d_timer;
     QElapsedTimer d_chronoBoucle;
     int d_time;
     /** Méthode pour créer l'interface de la fenêtre graphique */
-    void creeInterfaceTram(); //Gana
+    void creeInterfaceTram();
     /** Methode pour gerer l'affichage , paint Event */
-    void paintEvent(QPaintEvent*); //Gana
+    void paintEvent(QPaintEvent*); 
     /** Méthode pour afficher un arret */
-    void afficherArret(QPainter &painter, Arret arret); //Gana
+    void afficherArret(QPainter &painter, Arret arret); 
     /** Méthode pour afficher un tram */
-    void afficherTram(QPainter &painter, Tramway tram ); //Gana
+    void afficherTram(QPainter &painter, Tramway tram ); 
     /** Méthode pour afficher une ligne */
-    void afficherLigne(QPainter &painter, Arret arret1 , Arret arret2); //Gana
+    void afficherLigne(QPainter &painter, Arret arret1 , Arret arret2); 
     /** Méthode pour afficher tous les arrets */
-    void afficherTousArret(QPainter &painter); //Ensemble
+    void afficherTousArret(QPainter &painter); 
     /** Méthode pour afficher tous les trams */
-    void afficherTousTram(QPainter &painter); //Ensemble
+    void afficherTousTram(QPainter &painter); 
     /** Méthode pour afficher la ligne entiere */
-    void afficherLigneEntiere(QPainter &painter); //Ensemble
+    void afficherLigneEntiere(QPainter &painter); 
 };
 #endif // AFFICHAGERESEAU_H

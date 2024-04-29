@@ -5,23 +5,23 @@
 
 class Arret{
 public:
-    Arret(); //Pascaline
+    Arret(); 
     /** Méthode qui renvoie la composante x de l'arret */
-    int get_x()const; //Hugo
+    int get_x()const; 
     /** Méthode qui renvoie la composante y de l'arret */
-    int get_y()const; //Hugo
+    int get_y()const; 
     /** Méthode qui renvoie le nom de l'arret */
-    std::string get_nom()const; //Hugo
+    std::string get_nom()const; 
     /** Méthode qui renvoie la durée minimum à l'arret */
-    int get_dureeMin()const; //Hugo
+    int get_dureeMin()const; 
     /** Méthode qui renvoie la distance au prochaine arret (0 pour le dernier de la ligne) */
-    int get_distProcArret() const; //Hugo
+    int get_distProcArret() const; 
     /** Méthode qui permet de charger un arrêt depuis un fichier */
-    void chargerArret(std::ifstream& fin); //Pascaline
+    void chargerArret(std::ifstream& fin); 
     /** operator == */
-    bool operator==(const Arret& arret) const; //Gana
+    bool operator==(const Arret& arret) const; 
     /** operator != */
-    bool operator!=(const Arret& arret) const; //Gana
+    bool operator!=(const Arret& arret) const; 
 
 private:
     int d_x,d_y;
